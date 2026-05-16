@@ -1,5 +1,5 @@
 -- ══════════════════════════════════════════════════════════════════
---  grief.cc — Script completo do banco de dados
+--  dwe.lol — Script completo do banco de dados
 --  Cole tudo isso no Supabase > SQL Editor > New Query e clique Run
 -- ══════════════════════════════════════════════════════════════════
 

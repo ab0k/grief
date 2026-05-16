@@ -474,7 +474,7 @@ export default function SettingsPage() {
           </div>
           <Section label="Username" onEdit={() => setEditModal("username")}>
             <p style={{ margin: 0, fontWeight: 700, color: "#fff", fontSize: "0.95rem" }}>{profile?.username ?? "…"}</p>
-            <p style={{ margin: "4px 0 0", fontSize: "0.82rem", color: C.muted }}>Your profile is available at <span style={{ color: "#7c5cfc" }}>grief.cc/{profile?.username ?? "…"}</span></p>
+            <p style={{ margin: "4px 0 0", fontSize: "0.82rem", color: C.muted }}>Your profile is available at <span style={{ color: "#7c5cfc" }}>dwe.lol/{profile?.username ?? "…"}</span></p>
           </Section>
           <Section label="Email" onEdit={() => setEditModal("email")}>
             <p style={{ margin: 0, fontWeight: 600, color: "#fff", fontSize: "0.9rem" }}>{profile?.email || "Not set"}</p>
@@ -495,7 +495,7 @@ export default function SettingsPage() {
                 <DiscordIcon size={15} /> Connect Discord
               </button>
             )}
-            <p style={{ margin: "0.5rem 0 0", fontSize: "0.8rem", color: C.muted }}>Use Discord, in addition to your username and email, to access your grief.cc account.</p>
+            <p style={{ margin: "0.5rem 0 0", fontSize: "0.8rem", color: C.muted }}>Use Discord, in addition to your username and email, to access your dwe.lol account.</p>
           </div>
         </div>
       )}

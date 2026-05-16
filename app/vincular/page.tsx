@@ -81,7 +81,7 @@ function VincularPageInner() {
         <h1 style={{ color: "#fff", fontSize: "22px", margin: "0 0 8px" }}>
           Vincular Discord
         </h1>
-        <p style={{ color: "#888", fontSize: "14px", margin: "0 0 32px" }}>grief.cc</p>
+        <p style={{ color: "#888", fontSize: "14px", margin: "0 0 32px" }}>dwe.lol</p>
 
         {status === "checking" && (
           <p style={{ color: "#7c5cfc", fontSize: "15px" }}>⏳ Verificando...</p>
@@ -96,7 +96,7 @@ function VincularPageInner() {
         {status === "ready" && (
           <>
             <p style={{ color: "#ccc", marginBottom: "24px", fontSize: "15px" }}>
-              Clique no botão abaixo para vincular sua conta do Discord ao seu perfil do grief.cc.
+              Clique no botão abaixo para vincular sua conta do Discord ao seu perfil do dwe.lol.
             </p>
             <button
               onClick={handleVincular}

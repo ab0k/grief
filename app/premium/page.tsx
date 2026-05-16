@@ -137,7 +137,7 @@ export default function PremiumPage() {
                 </linearGradient>
               </defs>
             </svg>
-            <span style={{ fontWeight: 800, fontSize: "1rem", color: "#fff", letterSpacing: "-0.02em" }}>grief.cc</span>
+            <span style={{ fontWeight: 800, fontSize: "1rem", color: "#fff", letterSpacing: "-0.02em" }}>dwe.lol</span>
           </Link>
           <div style={{ display: "flex", gap: "0.75rem" }}>
             <Link href="/login" style={{ padding: "0.45rem 1rem", borderRadius: 8, fontSize: "0.85rem", color: "rgba(255,255,255,0.6)", textDecoration: "none", border: "1px solid rgba(255,255,255,0.1)" }}>

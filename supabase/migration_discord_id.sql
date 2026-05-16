@@ -1,5 +1,5 @@
 -- Adiciona coluna discord_id na tabela profiles
--- Permite o bot do Discord vincular usuários ao perfil do grief.cc
+-- Permite o bot do Discord vincular usuários ao perfil do dwe.lol
 
 ALTER TABLE profiles
   ADD COLUMN IF NOT EXISTS discord_id TEXT UNIQUE;

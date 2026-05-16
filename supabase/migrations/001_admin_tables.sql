@@ -151,7 +151,7 @@ insert into public.admin_settings (key, value) values
   ('maintenance_mode', 'false'),
   ('registration_enabled', 'true'),
   ('max_links_per_user', '20'),
-  ('site_name', 'grief.cc')
+  ('site_name', 'dwe.lol')
 on conflict (key) do nothing;
 
 -- ============================================================

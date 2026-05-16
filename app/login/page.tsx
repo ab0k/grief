@@ -103,7 +103,7 @@ function LoginPageInner() {
             </defs>
           </svg>
           <span style={{ fontSize: "1.15rem", fontWeight: 800, background: "linear-gradient(135deg, #7c5cfc, #f857a6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text", letterSpacing: "-0.02em" }}>
-            grief.cc
+            dwe.lol
           </span>
         </div>
 

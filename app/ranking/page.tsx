@@ -271,7 +271,7 @@ export default function RankingPage() {
             <circle cx="16" cy="22" r="3" fill="#fff" />
             <defs><linearGradient id="nlg2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse"><stop stopColor="#7c5cfc" /><stop offset="1" stopColor="#f857a6" /></linearGradient></defs>
           </svg>
-          <span style={{ fontWeight: 800, fontSize: "1rem", color: "#fff" }}>grief.cc</span>
+          <span style={{ fontWeight: 800, fontSize: "1rem", color: "#fff" }}>dwe.lol</span>
         </Link>
         <div style={{ display: "flex", gap: 8 }}>
           <Link href="/login" style={{ padding: "0.4rem 0.9rem", borderRadius: 8, fontSize: "0.83rem", color: "rgba(255,255,255,0.55)", textDecoration: "none", border: "1px solid rgba(255,255,255,0.1)" }}>Entrar</Link>

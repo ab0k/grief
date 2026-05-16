@@ -80,7 +80,7 @@ function MiniProfile({ profile }: { profile: typeof PROFILE_DEMOS[0] }) {
             color: profile.accent,
           }}
         >
-          grief.cc/{profile.handle}
+          dwe.lol/{profile.handle}
         </p>
         <p style={{ margin: "6px 0 0", fontSize: "0.8rem", color: "rgba(255,255,255,0.5)" }}>
           {profile.bio}

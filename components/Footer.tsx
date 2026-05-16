@@ -71,7 +71,7 @@ export default function Footer() {
                   whiteSpace: "nowrap",
                 }}
               >
-                grief.cc/
+                dwe.lol/
               </span>
               <input
                 type="text"

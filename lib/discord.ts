@@ -48,7 +48,7 @@ export async function sendDiscordLog(event: LogEvent) {
       title: `${event.method ?? "POST"} ${event.url ?? "/auth/" + event.type}`,
       color,
       fields,
-      footer: { text: `grief.cc ${label} • ${new Date().toLocaleString("pt-BR")}` },
+      footer: { text: `dwe.lol ${label} • ${new Date().toLocaleString("pt-BR")}` },
     }],
   };
 

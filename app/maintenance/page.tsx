@@ -16,10 +16,10 @@ async function getMaintenanceInfo() {
     return {
       message:  get("maintenance_message") || "Estamos realizando manutenção neste momento. Volte em breve.",
       endsAt:   get("maintenance_ends_at"),
-      siteName: get("site_name") || "grief.cc",
+      siteName: get("site_name") || "dwe.lol",
     };
   } catch {
-    return { message: "Estamos em manutenção. Volte em breve.", endsAt: "", siteName: "grief.cc" };
+    return { message: "Estamos em manutenção. Volte em breve.", endsAt: "", siteName: "dwe.lol" };
   }
 }
 

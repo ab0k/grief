@@ -100,7 +100,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               </linearGradient>
             </defs>
           </svg>
-          <span style={{ fontWeight: 800, fontSize: "1rem", color: "#fff", letterSpacing: "-0.02em" }}>grief.cc</span>
+          <span style={{ fontWeight: 800, fontSize: "1rem", color: "#fff", letterSpacing: "-0.02em" }}>dwe.lol</span>
         </div>
         {/* Close button — mobile only */}
         <button
@@ -238,7 +238,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
               <line x1="3" y1="8" x2="21" y2="8" /><line x1="3" y1="16" x2="21" y2="16" />
             </svg>
           </button>
-          <span style={{ fontWeight: 800, fontSize: "0.95rem", color: "#fff" }}>grief.cc</span>
+          <span style={{ fontWeight: 800, fontSize: "0.95rem", color: "#fff" }}>dwe.lol</span>
           <div style={{ width: 28, height: 28, borderRadius: "50%", background: "linear-gradient(135deg,#7c5cfc,#f857a6)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "0.72rem", fontWeight: 700, color: "#fff" }}>
             {user.username[0]?.toUpperCase() ?? "?"}
           </div>

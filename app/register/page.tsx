@@ -145,7 +145,7 @@ function RegisterForm() {
                   <input type="text" value={username} onChange={(e) => setUsername(e.target.value.replace(/[^a-zA-Z0-9_-]/g, "").toLowerCase())} placeholder="yourname" required style={inputStyle} onFocus={focusBorder} onBlur={blurBorder} />
                 </IconInput>
                 <p style={{ margin: "5px 0 0", fontSize: "0.8rem", color: "var(--text-muted)" }}>
-                  Your page: <strong style={{ color: "var(--text)" }}>grief.cc/{username || "username"}</strong>
+                  Your page: <strong style={{ color: "var(--text)" }}>dwe.lol/{username || "username"}</strong>
                 </p>
               </Field>
 

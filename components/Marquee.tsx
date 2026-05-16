@@ -20,7 +20,7 @@ function ProfileChip({ profile }: { profile: Profile }) {
   const color = colorFor(profile.username);
   return (
     <a
-      href={`https://grief.cc/${profile.username}`}
+      href={`https://dwe.lol/${profile.username}`}
       target="_blank"
       rel="noopener noreferrer"
       style={{
@@ -71,7 +71,7 @@ function ProfileChip({ profile }: { profile: Profile }) {
           {profile.username}
         </div>
         <div style={{ fontSize: "0.7rem", fontFamily: "'Geist Mono', monospace", color: "var(--text-muted)" }}>
-          grief.cc/{profile.username}
+          dwe.lol/{profile.username}
         </div>
       </div>
     </a>

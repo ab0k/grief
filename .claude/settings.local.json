@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"console.log\\(require\\('./node_modules/next/package.json'\\).version\\)\")",
+      "WebFetch(domain:aylo.me)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(Remove-Item -Force \"C:\\\\Users\\\\thiag\\\\Downloads\\\\linkbio-landing\\\\app\\\\api\\\\discord-decorations\\\\route.ts\" -ErrorAction SilentlyContinue)",
+      "Bash(Remove-Item -Force \"C:\\\\Users\\\\thiag\\\\Downloads\\\\linkbio-landing\\\\supabase\\\\migration_decoration.sql\" -ErrorAction SilentlyContinue)",
+      "Bash(node -e \"require\\('./node_modules/tsx'\\)\")",
+      "Bash(npm --version)",
+      "Bash(node node_modules/tsx/dist/cli.mjs src/index.ts)",
+      "Bash(npm install *)",
+      "Bash(xargs wc -l)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}

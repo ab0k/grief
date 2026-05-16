@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Geist+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #7c5cfc;
+  --accent-2: #f857a6;
+  --accent-3: #0ea5e9;
+  --bg: #080810;
+  --bg-card: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.08);
+  --text: #f0f0f8;
+  --text-muted: rgba(240,240,248,0.5);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Cabinet Grotesk', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+}
+
+.glow-text {
+  background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.7) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  font-weight: 700;
+  border-radius: 999px;
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s, transform 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.75rem 1.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  transition: border-color 0.2s, background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.btn-ghost:hover { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.05); }
+
+.url-bar {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 6px 6px 20px;
+  gap: 8px;
+  backdrop-filter: blur(8px);
+}
+
+.url-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-family: 'Geist Mono', monospace;
+  font-size: 0.95rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.url-bar input::placeholder { color: var(--text-muted); }
+
+.feature-card {
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.feature-card:hover { border-color: rgba(124, 92, 252, 0.4); transform: translateY(-4px); }
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.marquee-track:hover { animation-play-state: paused; }
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+.float { animation: float 4s ease-in-out infinite; }
+.float-delay { animation: float 4s ease-in-out 1.5s infinite; }
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.4; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+
+.pulse-ring { animation: pulse-ring 2.5s ease-out infinite; }
+
+@media (max-width: 768px) { .nav-links { display: none; } }

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { createClient } from "@/lib/supabase/client";
@@ -40,7 +40,7 @@ const TABS: TabDef[] = [
 
 const C = { bg: "#0d0d12", sidebar: "#111118", card: "#16161e", border: "rgba(255,255,255,0.07)", muted: "rgba(255,255,255,0.4)", primary: "#7c5cfc" };
 
-export default function AdminPage() {
+function AdminPageInner() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [user, setUser] = useState<{ username: string; role: string } | null>(null);
@@ -209,5 +209,13 @@ export default function AdminPage() {
         }
       `}</style>
     </div>
+  );
+}
+
+export default function AdminPage() {
+  return (
+    <Suspense>
+      <AdminPageInner />
+    </Suspense>
   );
 }

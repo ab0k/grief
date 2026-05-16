@@ -312,7 +312,11 @@ export default function BadgesPage() {
         .order("acquired_at", { ascending: false });
 
       if (userBadges) {
-        setOwned(userBadges as UserBadge[]);
+        setOwned(
+          (userBadges as unknown as { id: string; badge_id: string; acquired_at: string; badge: Badge[] }[])
+            .filter((r) => Array.isArray(r.badge) ? r.badge.length > 0 : r.badge)
+            .map((r) => ({ ...r, badge: Array.isArray(r.badge) ? r.badge[0] : r.badge }))
+        );
       }
 
       setLoading(false);
@@ -356,7 +360,9 @@ export default function BadgesPage() {
       }
       return;
     }
-    setOwned(prev => [data as UserBadge, ...prev]);
+    const raw = data as unknown as { id: string; badge_id: string; acquired_at: string; badge: Badge[] };
+    const normalized: UserBadge = { ...raw, badge: Array.isArray(raw.badge) ? raw.badge[0] : raw.badge };
+    setOwned(prev => [normalized, ...prev]);
     showToast(`Badge "${badge.name}" obtido!`);
   }
 

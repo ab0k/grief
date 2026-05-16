@@ -11,7 +11,10 @@
       "Bash(node node_modules/tsx/dist/cli.mjs src/index.ts)",
       "Bash(npm install *)",
       "Bash(xargs wc -l)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(Get-Content \"app\\\\admin\\\\page.tsx\")",
+      "Bash(Measure-Object -Line)"
     ]
   }
 }

@@ -522,6 +522,7 @@ export default function LinksPage() {
   const [showCustomize, setShowCustomize] = useState(false);
   const [editLink, setEditLink] = useState<DBLink | null>(null);
   const [toast, setToast] = useState<{ msg: string; ok: boolean } | null>(null);
+  const [openMenu, setOpenMenu] = useState<number | null>(null);
 
   useEffect(() => { load(); }, []);
 

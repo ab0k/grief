@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 
 type Status = "checking" | "ready" | "success" | "error" | "no-token";
 
-export default function VincularPage() {
+function VincularPageInner() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const token = searchParams.get("token");
@@ -168,5 +168,13 @@ export default function VincularPage() {
         )}
       </div>
     </div>
+  );
+}
+
+export default function VincularPage() {
+  return (
+    <Suspense>
+      <VincularPageInner />
+    </Suspense>
   );
 }

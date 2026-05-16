@@ -105,7 +105,7 @@ function RegisterForm() {
             </defs>
           </svg>
           <span style={{ fontSize: "1.15rem", fontWeight: 800, background: "linear-gradient(135deg, #7c5cfc, #f857a6)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text", letterSpacing: "-0.02em" }}>
-            grief.cc
+            dwe.lol
           </span>
         </div>
 
@@ -115,7 +115,7 @@ function RegisterForm() {
             <div>
               <h1 style={{ fontSize: "1.55rem", fontWeight: 800, margin: 0, letterSpacing: "-0.03em" }}>Register</h1>
               <p style={{ color: "var(--text-muted)", margin: "6px 0 0", fontSize: "0.9rem" }}>
-                Create your account to start using grief.cc
+                Create your account to start using dwe.lol
               </p>
             </div>
 

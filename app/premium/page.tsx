@@ -402,7 +402,7 @@ export default function PremiumPage() {
         {/* ── Footer ── */}
         <footer style={{ borderTop: "1px solid rgba(255,255,255,0.06)", padding: "1.5rem 2rem", textAlign: "center" }}>
           <p style={{ margin: 0, fontSize: "0.78rem", color: "rgba(255,255,255,0.2)" }}>
-            © 2025 grief.cc · <Link href="/" style={{ color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Voltar ao início</Link>
+            © 2025 dwe.lol · <Link href="/" style={{ color: "rgba(255,255,255,0.3)", textDecoration: "none" }}>Voltar ao início</Link>
           </p>
         </footer>
       </div>

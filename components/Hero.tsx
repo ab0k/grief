@@ -186,7 +186,7 @@ export default function Hero() {
               whiteSpace: "nowrap",
             }}
           >
-            grief.cc/
+            dwe.lol/
           </span>
           <input
             type="text"
